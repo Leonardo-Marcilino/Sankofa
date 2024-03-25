@@ -1,0 +1,322 @@
+body{
+    font-family: "jost", "Poppins", sans-serif; 
+    background-color: #011526;  
+    color: #EEEEEE;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 77px;
+}
+.menu-header{
+    display: flex;
+    gap: 67px;
+}
+.link-menu-header{
+    color: #EEEEEE;
+    font-size: 20px;
+    font-weight: 500;
+}
+#home{
+    color: #F2A71B;
+    font-size: 20px;
+    font-weight: 500;
+}
+.secao-introducao{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 180px;
+}
+.bx-text-introducao{
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 100px;
+}
+.first-text-introducao{
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    color: #FDFDFD;
+}
+.sg-text-introducao{
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F2A71B;
+}
+.bx-image-introducao{
+    position: relative;
+    width: 455px;
+}
+.bx-image-introducao img{
+    width: 100%;
+}
+.orange-bloco{
+    position: absolute;
+    z-index: -1;
+    width: 238px;
+    height: 462px;
+    background-color: #F2A71B;
+}
+#ps-top-block{
+    right: 270px;
+    bottom: 170px;
+    border-radius: 45px 0px 0px 45px;
+    
+}
+#ps-bottom-block{
+    top: 160px;
+    left: 270px;
+    border-radius: 0px 45px 45px 0px;
+}
+.topicos-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+    gap: 40px;
+}
+.title-topicos{
+    text-align: center;
+    color: #EEEEEE;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Raleway", sans-serif;
+    width: 786px;
+}
+.card-topicos-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+ /*Border radius de todos as divs dentro do flip-card */
+.flip-card,.flip-card-interna,.flip-card-frente img,.sombra-img,.flip-card-costas{
+    border-radius: 8px;
+ }
+ /*O recipiente do cartão flip - defina a largura e a altura como desejar. */
+.flip-card{
+    width: 340px;
+    height: 400px;
+}
+/* Este contêiner é necessário para posicionar a frente e o verso */
+.flip-card-interna {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 1.3s;
+    transform-style: preserve-3d;
+} 
+/* Faça um giro horizontal ao mover o mouse sobre o contêiner da caixa de virar */
+.flip-card:hover .flip-card-interna {
+    transform: rotateY(180deg);
+}
+.sombra-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#2c2c2c7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "jost", "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: bolder;
+   
+}
+.sombra-img h3{
+    text-shadow: rgba(0, 0, 0, 0.678) 0.1em 0.1em 0.2em;
+    height: auto;
+}
+#atv-color{
+    color: #E54E3D;
+}
+.og-color{
+    color: #F26A1B;
+}
+#inv-color{
+    color: #35B756;
+}
+.wh-color{
+    color: #EEEEEE;
+}
+/* Posicione a frente e o verso */
+.flip-card-frente, .flip-card-costas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-card-frente img{
+    width: 100%;
+    height: 100%;
+}
+ /*Estilize a parte de trás */
+.flip-card-costas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #022E53;
+    transform: rotateY(180deg);
+    padding: 30px;
+}
+.flip-card-costas p{
+    text-align: center;
+    color: #EEEEEE;
+    font-weight: bold;
+}
+.bx-video{
+    position: relative;
+    width: 100%;
+    height: 477px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+.blue-bloco{
+    width: 461px;
+    height: 542px;
+    background-color: #F26A1B;
+    position: absolute;
+    z-index: -1;
+}
+#ps-top-blue{
+    left: 130px;
+    bottom: -30px;
+    border-radius: 45px 350px 70px 45px;
+}
+#ps-bottom-blue{
+    right: 130px;
+    bottom: -30px;
+    border-radius: 70px 45px 45px 350px;
+}
+.video{
+    width: 1032px;
+    height: 100%;
+    border-radius: 50px;
+}
+.sobre-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 130px;
+}
+.title-sobre{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.bx-text-sobre{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.text-sobre{
+    font-size: 30px;
+    width: 580px;
+}
+#secao-desenvolvedores{
+    background-color: #011526;
+    width: 100%;
+    height: 900px;
+}
+
+.secao-titulo{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 130px 0px 50px 0px;
+}
+
+#box-dev{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conteudo-dev{
+    width: 450px;
+    height: 178px;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    
+}
+
+.imagem-perfil{
+    width: 250px;
+    height: auto;
+    position: relative;
+}
+
+.imagem-perfil img{
+    width: 100%;
+}
+
+.texto-perfil{
+    width: 100%;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.caixa-redes{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cargo p{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.line-footer{
+    height: 0.1px;
+    width: 50%;
+    margin: 50px auto;
+    color: #F26A1B;
+}
+
+footer {
+    background-color: #011526;
+    color: #fff;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu-rodape ul {
+    display: flex;
+    align-items: center;
+    gap: 60px
+}
+.logo-rodape img {
+    width: 150px;
+}
+
+.box-redes-copy{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 20px;
+}
+.redes-icones-rodape{
+    display: flex;
+    gap: 10px;
+}
